@@ -1,0 +1,20 @@
+.leftPanel {
+    height: calc(100vh - 5rem);
+    width: 350px;
+}
+
+.pageWrapper  { 
+    height: calc(100vh - 5rem);
+    width: calc(100vw - 370px);
+}
+
+.pageTitle { 
+    left: 50%;
+    top: 30px;
+    transform: translate(-50%, 0);
+}
+
+.myPage { 
+    width: 842px;
+    height: 1089px;
+}
