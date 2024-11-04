@@ -4,6 +4,8 @@ import { createPdf, range, scrPaper, grid } from "./utils"
 
 import './App.css'
 
+const IMG_DIR = '/us-target-editor/img'
+
 export default function App() {
   const [target, setTarget] = useState(6)
   const [cols, setCols] = useState(4)
@@ -37,7 +39,7 @@ export default function App() {
               className={"w-16 h-16 m-1 p-3 rounded-md hover:bg-slate-100 " + (target === ix ? "bg-slate-100" : "bg-slate-300")}
               key={ix}
             >
-              <img alt="" className="w-10 h-10" src={`/img/${t}`} />
+              <img alt="" className="w-10 h-10" src={`${IMG_DIR}/${t}`} />
             </div>
           ))}
         </div>
@@ -100,7 +102,7 @@ export default function App() {
         <div id="mypage" className={`myPage relative bg-white my-0 mx-auto`}>
           {gridOn && (
             <div className="absolute top-0 right-0 bottom-0 left-0 z-0 opacity-30">
-              <img className="w-full h-full" alt="" src="/img/inch.png" />
+              <img className="w-full h-full" alt="" src="${IMG_DIR}//inch.png" />
             </div>
           )}
           <div className="pageTitle z-1 absolute text-3xl font-bold bg-white p-2">
@@ -109,7 +111,7 @@ export default function App() {
           {range(cols, rows).map(({ x, y }, i) => {
             return (
               <div style={grid(rows, cols, x, y, size)} className="absolute z-1" key={y + ":" + x}>
-                <img alt="" className="opacity-90 w-full h-full" src={`/us-target-editor/img/${targets[target]}`} />
+                <img alt="" className="opacity-90 w-full h-full" src={`${IMG_DIR}/${targets[target]}`} />
               </div>
             )
           })}
