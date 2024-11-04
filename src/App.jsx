@@ -102,7 +102,7 @@ export default function App() {
         <div id="mypage" className={`myPage relative bg-white my-0 mx-auto`}>
           {gridOn && (
             <div className="absolute top-0 right-0 bottom-0 left-0 z-0 opacity-30">
-              <img className="w-full h-full" alt="" src="${IMG_DIR}//inch.png" />
+              <img className="w-full h-full" alt="" src="${IMG_DIR}/inch.png" />
             </div>
           )}
           <div className="pageTitle z-1 absolute text-3xl font-bold bg-white p-2">
