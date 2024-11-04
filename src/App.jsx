@@ -109,7 +109,7 @@ export default function App() {
           {range(cols, rows).map(({ x, y }, i) => {
             return (
               <div style={grid(rows, cols, x, y, size)} className="absolute z-1" key={y + ":" + x}>
-                <img alt="" className="opacity-90 w-full h-full" src={`/img/${targets[target]}`} />
+                <img alt="" className="opacity-90 w-full h-full" src={`/us-target-editor/img/${targets[target]}`} />
               </div>
             )
           })}
