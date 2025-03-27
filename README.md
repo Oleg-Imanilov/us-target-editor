@@ -1,3 +1,3 @@
 # US Target Editor
 
-https://htmlpreview.github.io/?https://github.com/Oleg-Imanilov/us-target-editor/blob/master/dist/index.html
+[Open in browser](https://oleg-imanilov.github.io/us-target-editor/)
